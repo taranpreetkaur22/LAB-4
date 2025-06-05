@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lab 4 - Exercise 5</title>
+</head>
+<body>
+    <script>
+        function oldFunction() {
+            return function() {
+                console.log("This is an original function.");
+            };
+        }
+
+        let myFunction = oldFunction(); // Returns the inner function
+        myFunction(); // Calls the returned function
+    </script>
+</body>
+</html>
